@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JKALELI Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/jkaleli-solutions.css">
+</head>
+<body>
+
+<!-- Animated Background Elements -->
+<div class="bg-container">
+  <!-- Particle Network -->
+  <canvas id="particle-canvas"></canvas>
+  
+  <!-- Glow Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+ 
+  <!-- Dot Grid Mesh -->
+  <div class="dot-grid-overlay"></div>
+</div>
+
+<!-- Construction Banner -->
+<div class="banner">
+  This site is under maintenance, bear with us as we bring you the best version for you.
+</div>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-logo">
+    <div class="jk-top">
+      <img src="../PORT/Logo_no_bg.png" alt="Logo" class="nav-logo-img">
+      <div class="text-group">
+        <span class="jk-gray">JK</span><span class="jk-blue">ALELI</span>
+        <div class="jk-sub">INNOVATION &amp; TECHNOLOGY</div>
+      </div>
+    </div>
+  </div>
+ <div class="nav-buttons">
+  <button type="button" class="nav-btn" data-page="home">HOME</button>
+  <button type="button" class="nav-btn" data-page="portfolio">PORTFOLIO</button>
+  <button type="button" class="nav-btn" data-page="about">ABOUT US</button>
+  <button type="button" class="nav-btn" data-page="services">SERVICES</button>
+</div>
+</nav>
+
+<!-- ═══════════════ HOME PAGE ═══════════════ -->
+<div id="page-home" class="page active">
+  <section class="Section-home1 "> 
+  <div class="section hero-row">
+    <div class="hero-copy home-copy">
+      <p>Hello, welcome to <span class="brand">JKALELI</span> <span class="brand-teal">Solutions</span> where we turn ideas into reality. Join us and we will assist you in transforming your startup, currently running or your idea into an inspiration to others.</p>
+    </div>
+    
+    <div class="hero-mascot"><img src="../PORT/Clip path group.svg" alt="JKALELI mascot" class="mascot-img" /></div>
+  </div>
+
+  <div class="home-roadmap">
+    <div class="road-label">OUR ROADMAP</div>
+    <div class="road-track">
+      <div class="road-step">
+        <span class="step-number" img="../PORT/Discover.svg" data-title="Discovery" 
+            data-text="Conducting deep dive research into market trends and user behavior.">1</span>
+        <span class="step-copy">Discover</span>
+         
+      </div>
+      <div class="road-segment" ></div>
+      <div class="road-step">
+        <span class="step-number" img="../PORT/Design.svg" data-title="UX/UI Design" 
+            data-text="Crafting intuitive interfaces and seamless user journeys.">2</span>
+        <span class="step-copy">Design</span>
+      </div>
+      <div class="road-segment"></div>
+      <div class="road-step">
+        <span class="step-number" img="../PORT/Develop.svg" data-title="Development" data-text="Development begins.">3</span>
+        <span class="step-copy">Develop</span>
+      </div>
+        <div class="road-segment"></div>
+      <div class="road-step">
+        <span class="step-number" img="../PORT/Test.svg" data-title="Test" >4</span>
+        <span class="step-copy">Test</span>
+      </div>
+        <div class="road-segment"></div>
+      <div class="road-step">
+        <span class="step-number" img="../PORT/Launch.svg" data-title="Deployment">5</span>
+        <span class="step-copy">launch</span>
+      </div>
+      <div class="road-arrow">→</div>
+    </div>
+  </div>
+  <div id="modal-overlay" class="modal-overlay">
+  <div id="road-modal" class="road-modal">
+    <div class="modal-image" id="modal-img"></div>
+    <div class="modal-content">
+      <h4 id="modal-title">Step Title</h4>
+      <p id="modal-text">Description goes here.</p>
+    </div>
+  </div>
+</div>
+
+  <div class="home-copy">
+    <p>Every project begins with a deep listening session so we can understand your audience, your goals and the story behind your brand.
+    We design polished digital experiences that build trust, increase conversions and make your business look as powerful as it truly is.
+    From beautiful web and app design to strong digital launch support, we help businesses stand out with clarity, confidence and thoughtful execution.
+    Our process is built around collaboration, deliberate strategy and fast iteration so your brand moves forward with momentum.</p>
+  </div>
+
+  <div class="home-copy">
+    <p>We create digital products for ambitious teams that want to move faster, look better and make every customer moment feel considered.
+    By aligning strategy, design and development, we turn your vision into a complete experience that feels effortless and distinctive.</p>
+  </div>
+  </section>
+<section class="home-mid">
+  <div class="we-help">WE ARE HERE TO HELP YOU IN:</div>
+
+  <div class="services-grid">
+    <div class="service-icon-card" data-page="services">
+       <div class="icon"><img src="../PORT/Vector1.svg" alt="JKALELI mascot" class="icon" /></div>
+      <span class="text-1"><div class="text-1">UX Design</div></span>
+    </div>
+    <div class="service-icon-card" data-page="services">
+      <div class="icon"><img src="../PORT/Vector2.svg" alt="JKALELI mascot" class="icon" /></div>
+      <span class="text-1"> <div class="text-1">Web Development</div></span>
+    </div>
+    <div class="service-icon-card" data-page="services">
+     <div class="icon"><img src="../PORT/Vector3.svg" alt="JKALELI mascot" class="icon" /> </div>
+      <span class="text-1"> <div class="text-1">Startup Ideas</div></span>
+    </div>
+    <div class="service-icon-card" data-page="services">
+      <div class="icon"><img src="../PORT/Vector4.svg" alt="JKALELI mascot" class="icon" /></div>
+      <span class="text-1"> <div class="text-1">Web Design</div></span>
+    </div>
+    <div class="service-icon-card" data-page="services">
+      <div class="icon"><img src="../PORT/Vector5.svg" alt="JKALELI mascot" class="icon " /> </div>
+      <span class="text-1"> <div class="text-1">App Development</div></span>
+    </div>
+    <div class="service-icon-card" data-page="services">
+      <div class="icon"><img src="../PORT/Vector6.svg" alt="JKALELI mascot" class="icon" /></div>
+      <span class="text-1"> <div class="text-1">Search Engine Optimization</div></span>
+    </div>
+  </div>
+
+
+  <div class="home-features-row">
+    <button type="button" class="feature-card" data-page="services">
+      <div class="feature-icon">⚡</div>
+      <div class="feature-title">Fast Turnaround</div>
+      <div class="feature-copy">Launch quickly with polished designs, without losing attention to detail.</div>
+    </button>
+    <button type="button" class="feature-card" data-page="services">
+      <div class="feature-icon">🤝</div>
+      <div class="feature-title">Collaborative Process</div>
+      <div class="feature-copy">Work with a team that listens, refines, and delivers what your business needs.</div>
+    </button>
+    <button type="button" class="feature-card" data-page="services">
+      <div class="feature-icon">📈</div>
+      <div class="feature-title">Growth Focused</div>
+      <div class="feature-copy">We create experiences designed to build trust, increase engagement, and convert visitors.</div>
+    </button>
+  </div>
+
+  <div class="views-label">Views from our clients:</div>
+  <div class="testimonials-row">
+    <div class="testimonial-card">"JKALELI delivered a website that feels premium and easy to use. Our conversion rate improved in the first week." — A delighted client</div>
+    <div class="testimonial-card">"Their design process was clear and fast. We went from idea to launch with confidence." — Startup founder</div>
+    <div class="testimonial-card">"Beautiful branding paired with smart technical execution made our product stand out." — Business owner</div>
+    <div class="testimonial-card">"The team understood our brand instantly and created a digital presence that feels authentic." — Brand manager</div>
+  </div>
+
+
+ 
+</section>
+
+<div class="hire-row">
+    <button type="button" class="nav-btn btn-hire" data-page="services">HIRE US</button>
+  </div>
+ </div>
+
+<div id="home-footer"></div>
+<!-- ═══════════════ PORTFOLIO PAGE ═══════════════ -->
+<div id="page-portfolio" class="page">
+  <section class="portfolio-section-1">
+    <div class="section hero-row">
+      <div class="portfolio-hero">
+        In <span class="brand-teal">JKALELI</span> <span class="brand-teal">Solutions</span> we provide the best designs that fit your taste
+        and style. We give you the best experience and a memory worth remembering.
+        What you dream of is what we bring to life. Let us help you achieve it.
+      </div>
+      <div class="hero-mascot"><img src="../PORT/Clip.svg" alt="JKALELI mascot" class="mascot-img" /></div>
+    </div>
+
+    <div class="portfolio-copy">
+      We create digital products that feel modern, functional and easy to navigate. Every portfolio piece is built with a focus on performance, clarity and results.
+    </div>
+
+    <div class="portfolio-highlights">
+      <div class="highlight-card">🚀 Fast launch-ready design systems</div>
+      <div class="highlight-card">✨ Clear, memorable brand experiences</div>
+      <div class="highlight-card">🔧 Thoughtful usability for every device</div>
+    </div>
+  </section>
+
+  <section class="portfolio-section-2">
+    <div class="projects-label">Projects</div>
+
+    <div class="filter-row">
+      <button type="button" class="filter-btn active" data-category="all">ALL</button>
+      <button type="button" class="filter-btn" data-category="designs">DESIGNS</button>
+      <button type="button" class="filter-btn" data-category="websites">WEBSITES</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolio-grid">
+      <div class="portfolio-item" data-cat="designs">UI Design</div>
+      <div class="portfolio-item" data-cat="websites">Web App</div>
+      <div class="portfolio-item" data-cat="designs">Branding</div>
+      <div class="portfolio-item" data-cat="websites">Landing Page</div>
+      <div class="portfolio-item" data-cat="designs">Logo Design</div>
+      <div class="portfolio-item" data-cat="websites">E-Commerce</div>
+    </div>
+  </section>
+
+  <div id="portfolio-footer"></div>
+</div>
+
+<!-- ═══════════════ ABOUT PAGE ═══════════════ -->
+<div id="page-about" class="page">
+  <section class="about-section-1">
+    <div class="section">
+      <p class="about-text">
+        <span class="brand-teal">JKALELI</span> <span class="brand-teal">Solutions</span> is all about
+        community, growth and Honesty. We thrive in the success and satisfaction of our clients as we
+        continue bringing change to this world.
+      </p>
+      <br>
+      <p class="about-text">
+        We are not only aiming at transforming designs but also the lives of those whom we impact with
+        our work. Let us work together in order to bring dreams into reality as our motto says
+        "To All New Possibilities".
+      </p>
+    </div>
+     <div class="about-story">
+      <p>We bring together designers, developers and strategists who care deeply about your success. Our process is transparent, collaborative and built around your vision.</p>
+      <p>Each solution is made to look beautiful, work smoothly, and make your customers feel confident about choosing you.</p>
+    </div>
+    
+  </section>
+
+  <section class="about-section-2">
+   
+    <div class="motto-card">
+      <div class="motto-label">Motto</div>
+      <div class="motto-text">To All New Possibilities</div>
+    </div>
+    <div class="about-values-row">
+      <div class="value-card">💡 Creative thinking that makes brands memorable</div>
+      <div class="value-card">🤝 Honest collaboration from start to finish</div>
+      <div class="value-card">📊 Results-driven work designed to grow your business</div>
+    </div>
+
+    <div class="views-label">Views from our clients:</div>
+    <div class="testimonials-row">
+      <div class="testimonial-card">Coming soon</div>
+      <div class="testimonial-card">Coming soon</div>
+      <div class="testimonial-card">Coming soon</div>
+    </div>
+  </section>
+
+  <div id="about-footer"></div>
+</div>
+
+<!-- ═══════════════ SERVICES PAGE ═══════════════ -->
+<div id="page-services" class="page">
+  <section class="services-section-1">
+    <div class="section">
+      <div class="services-intro">We offer exceptional services based on what and how our clients prefer. Our goal is to provide a digital presence that feels professional, trustworthy, and uniquely yours.</div>
+      <div class="services-include">These services include:</div>
+
+      <div class="services-benefits">
+        <div class="benefit-card" data-service="uiux">🎨 User-first design that creates stronger connections</div>
+        <div class="benefit-card" data-service="webdev">⚡ Faster delivery with reliable, scalable solutions</div>
+        <div class="benefit-card" data-service="seo">📈 A growth mindset for traffic, visibility and conversion</div>
+      </div>
+</section>
+
+ <section class="services-section-2">
+      <div class="services-cards">
+        <div class="service-card" data-service="uiux">
+          <div class="service-card-img ui-card"><img src="../PORT/Image 6.svg" alt="JKALELI mascot" class="service-img" /></div>
+          <div class="service-card-label">UI/UX Design</div>
+        </div>
+        <div class="service-card" data-service="webdesign">
+          <div class="service-card-img web-design-card"><img src="../PORT/Image 5.svg" alt="JKALELI mascot" class="service-img" /></div>
+          <div class="service-card-label">Web Design</div>
+        </div>
+        <div class="service-card" data-service="webdev">
+          <div class="service-card-img web-dev-card"><img src="../PORT/Image 4.svg" alt="JKALELI mascot" class="service-img" /></div>
+          <div class="service-card-label">Web Development</div>
+        </div>
+        <div class="service-card" data-service="appdev">
+          <div class="service-card-img app-dev-card"><img src="../PORT/Image 3.svg" alt="JKALELI mascot" class="service-img" /></div>
+          <div class="service-card-label">App Development</div>
+        </div>
+        <div class="service-card" data-service="startup">
+          <div class="service-card-img startup-card"><img src="../PORT/Image 2.svg" alt="JKALELI mascot" class="service-img" /></div>
+          <div class="service-card-label">Startup Ideas</div>
+        </div>
+        <div class="service-card" data-service="seo">
+          <div class="service-card-img seo-card"><img src="../PORT/Image 1.svg" alt="JKALELI mascot" class="service-img" /></div>
+          <div class="service-card-label">Search Engine Optimization</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div id="services-footer"></div>
+</div>
+
+<!-- Service Detail Overlay -->
+<div class="service-detail" id="service-detail">
+  <button class="detail-close" type="button" data-close-detail>✕</button>
+  <div class="detail-icon" id="detail-icon"></div>
+  <div class="detail-title" id="detail-title"></div>
+  <div class="detail-card" id="detail-desc"></div>
+  
+<button class="btn-submit" type="button" style="align-self:center" data-close-detail>Get Started</button>
+</div>
+
+<!-- Shared Footer Template -->
+
+<template id="footer-tpl">
+  <section class="footer">
+  <footer>
+    <div class="email-form">
+      <div class="email-form-label">Email us:</div>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="@gmail.com">
+      <textarea placeholder="Type here..."></textarea>
+      <button class="btn-submit">SUBMIT</button>
+    </div>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#" class="footer-link" data-page="home">Home</a>
+        <a href="#" class="footer-link" data-page="portfolio">Portfolio</a>
+        <a href="#" class="footer-link" data-page="about">About Us</a>
+        <a href="#" class="footer-link" data-page="services">Services</a>
+        <h4 style="margin-top:14px">Connect With Us</h4>
+        <div class="social-row">
+          <div class="social-icon">📸</div>
+          <div class="social-icon">𝕏</div>
+          <div class="social-icon">f</div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <div class="get-in-touch-item">📧 jkalelistudios@gmail.com</div>
+        <div class="get-in-touch-item">📞 0707902310</div>
+        <div class="get-in-touch-item">📍 Flur, Ban-Venue</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>2026 Rights Reserved JKALELI SOLUTIONS</span>
+      <div style="display:flex;gap:12px">
+        <a href="#">Terms</a>
+        <a href="#">Policy</a>
+      </div>
+    </div>
+  </footer>
+</template>
+
+
+
+<script src="jkaleli-solutions.js"></script>
+</body>
+</html>
+
